@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>angular2 playground</title> 
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://code.angularjs.org/2.0.0-beta.0/angular2-polyfills.js"></script>
-  <script src="https://code.angularjs.org/tools/system.js"></script>
-  <script src="https://code.angularjs.org/tools/typescript.js"></script>
-  <script src="config.js"></script>
-  <script src="https://code.angularjs.org/2.0.0-beta.0/Rx.js"></script>
-  <script src="https://code.angularjs.org/2.0.0-beta.0/angular2.js"></script>
-  <script src="https://code.angularjs.org/2.0.0-beta.0/http.min.js"></script>
+    <meta charset="utf-8" />
+    <title>TODO MVC</title>
 
-  <script>
-    System.import('app')
-      .catch(console.error.bind(console));
-  </script>
+    <link rel="stylesheet" href="node_modules/todomvc-common/base.css" />
+    <link rel="stylesheet" href="node_modules/todomvc-app-css/index.css" />
+
+    <script src="https://code.angularjs.org/tools/typescript.js"></script>
+    <script src="https://code.angularjs.org/tools/system.js"></script>
+    <script src="system.config.js"></script>
+
+    <script src="https://code.angularjs.org/2.0.0-beta.0/Rx.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/angular2-polyfills.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/angular2.js"></script>
+
+    <script>
+        System.import('app')
+            .catch(console.error.bind(console));
+    </script>
 </head>
 
 <body>
-  <root>
-    loading...
-  </root>
-</body>
+    <todo-app></todo-app>
 
+    <footer class="info">
+        <p>Double-click to edit a todo</p>
+        <p>
+            Created by <a href="https://github.com/leejefon">Jeff Lee</a>
+            using <a href="http://angular.io">Angular2</a>
+        </p>
+        <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+    </footer>
+</body>
 </html>
