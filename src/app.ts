@@ -8,6 +8,11 @@ import { StatusFilterPipe } from './statusFilterPipe';
     pipes: [StatusFilterPipe]
 })
 export class App {
+    todos: any[];
+    currentFilter: string;
+    newTodoText: string;
+    unsubscribe: any;
+
     constructor(
         @Inject('AppStore') private appStore: AppStore,
         private todoActions: TodoActions

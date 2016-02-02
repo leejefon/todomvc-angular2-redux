@@ -8,6 +8,8 @@ export const REMOVE_COMPLETED_TODOS = 'REMOVE_COMPLETED_TODOS';
 export const SET_FILTER = 'SET_FILTER';
 
 export class TodoActions {
+    nextToDoId: number;
+
     constructor() {
         this.nextToDoId = 0;
     }

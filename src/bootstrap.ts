@@ -1,3 +1,6 @@
+/// <reference path="../node_modules/angular2/platform/browser.d.ts" />
+/// <reference path="../node_modules/angular2/core.d.ts" />
+
 import { bootstrap } from 'angular2/platform/browser';
 import { provide, enableProdMode } from 'angular2/core';
 

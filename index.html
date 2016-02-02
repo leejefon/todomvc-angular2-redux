@@ -7,15 +7,28 @@
     <link rel="stylesheet" href="node_modules/todomvc-common/base.css" />
     <link rel="stylesheet" href="node_modules/todomvc-app-css/index.css" />
 
-    <script src="https://code.angularjs.org/tools/typescript.js"></script>
-    <script src="https://code.angularjs.org/tools/system.js"></script>
-    <script src="system.config.js"></script>
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
 
-    <script src="https://code.angularjs.org/2.0.0-beta.0/Rx.js"></script>
-    <script src="https://code.angularjs.org/2.0.0-beta.0/angular2-polyfills.js"></script>
-    <script src="https://code.angularjs.org/2.0.0-beta.0/angular2.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.js"></script>
 
     <script>
+        System.config({
+            map: {
+                app: "./js",
+                redux: "../node_modules/redux/dist/redux.js"
+            },
+            packages: {
+                app: {
+                    main: './bootstrap.js',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+
         System.import('app')
             .catch(console.error.bind(console));
     </script>
