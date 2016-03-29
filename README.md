@@ -29,6 +29,12 @@ The app is built with Angular2 in TypeScript.  This app also utilizes redux to h
 For more information on Anguar2, TypeScript or redux, check out the resources link above.
 
 
+## TODO
+
+- Add routes for all/active/completed
+- Persist data on firebase/localStorage
+
+
 ## Credit
 
 Created by [Jeff Lee](https://www.jefflee.net)

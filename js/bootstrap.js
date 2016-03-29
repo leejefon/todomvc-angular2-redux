@@ -1,7 +1,6 @@
-/// <reference path="../node_modules/angular2/platform/browser.d.ts" />
-/// <reference path="../node_modules/angular2/core.d.ts" />
-System.register(['angular2/platform/browser', 'angular2/core', './app', 'redux', './todoReducer', './todoActions'], function(exports_1) {
+System.register(['angular2/platform/browser', 'angular2/core', './app', 'redux', './todoReducer', './todoActions'], function(exports_1, context_1) {
     "use strict";
+    var __moduleName = context_1 && context_1.id;
     var browser_1, core_1, app_1, redux_1, todoReducer_1, todoActions_1;
     var appStore;
     return {
